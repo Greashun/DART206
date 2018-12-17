@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Hello!</title>
+    <!-- Boring stuff for any website -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css">
     
-    <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
+    <!-- Add your own title here -->
+    <title>Landing Page</title>
+    
+    
+    
+      <!-- Import stylesheet file.
+        Note: If you move or rename "styles.css" you need to update the "href" path. Slashes denote folders. -->
+    <link rel="stylesheet" href="css/styles.css">
+    
   </head>  
   <body>
-    <h1>Hi there!</h1>
-    
-    <p>
-      I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
-    </p>
+   
+      <!--  Begin grid container-->
+      <div class="container">
 
-    <!-- include the Glitch button to show what the webpage is about and
-          to make it easier for folks to view source and remix -->
+        <!-- Your HTML content goes below here -->
+
+          <div class="section one">
+            <h1>Some title</h1>
+          </div>
+
+          <div class="section two">
+            <h2>Section Two</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu eros a enim commodo lobortis sit amet a tortor. Etiam et est est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu eros a enim commodo lobortis sit amet a tortor. Etiam et est est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+          </div>
+
+          <div class="section three">
+            <p>Section three</p>
+          </div>
+          <div class="section four">
+            <p>Section four</p>
+          </div>
+
+          <div class="section five">
+            <p>Section five has a <a href="https://google.com"> link to Google</a></p>
+         </div>
+
+
+      </div> <!-- End grid container -->
+
+    
+    
+    <!-- Includes the Glitch button in the corner to show what the webpage is about and to make it easier for folks to view source and remix -->
     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js"></script>
+    
   </body>
 </html>

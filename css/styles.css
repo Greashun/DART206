@@ -1,0 +1,88 @@
+/*****************************
+Basic styles
+******************************/
+
+body {
+    margin: 0;
+    padding: 30px; /* Pushes content away from the edges of the browser */
+    background: #dedede; /* Background color */
+    font-family: sans-serif; /* Sets font family for entire page, unless you declare something else below */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: lightseagreen; /* Color for all headers */
+}
+
+
+/* Links */
+a {
+  color: dodgerblue;
+  text-decoration: none; /* Removes underline from hyperlinks */
+}
+
+/* Hover effects */
+a:hover { color: royalblue; }
+
+
+/*****************************
+Grid Container
+******************************/
+.container {
+  display: grid;  /* Don't delete this line */
+  grid-template-columns: repeat(12, 1fr); /* Sets up 12 equal columns */
+  grid-gap: 10px; /* Sets gap between sections */
+}
+
+/*****************************
+All Sections
+******************************/
+.section {
+  padding: 15px;
+  background: white;
+}
+
+/*****************************
+Individual Sections - Change the class names if you want, and delete anything you don't need.
+******************************/
+.one {
+  grid-column: span 12; /* Spans full width of 12 column container */
+}
+
+.two {
+  grid-column: span 4; /* Spans 4 columns (out of 12) */
+}
+.three {
+  grid-column: span 4;
+  /* The following three lines center the content vertically AND horizontally. Read more about Flex here: https://internetingishard.com/html-and-css/flexbox/ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.four {
+  grid-column: span 4;
+  height: 200px; /* Manually sets the height, otherwise the height will be determined by the tallest content in the grid row. */
+  background: #dcdcdc; /* Matches the background color of the body */
+  border: 1px solid #ababab;
+}
+
+/* With 12 columns, there are 13 vertical lines defining them;
+this tells the element to go from 2 to 7 */
+.five {
+  grid-column:  3 / 11; /* Instead of defining the size with "span" this section begins at column-line-3 and ends at column-line-11 (note that 12 columns create 13 column-lines between the columns) */
+  text-align: center; /* Centers the text horizontally */
+}
+
+
+
+/*****************************
+ FOR MOBILE DEVICES:
+ When the browser is smaller than 600px wide,
+ all sections become 12 columns wide (full width).
+ TRY RESIZING YOUR BROWSER TO SEE THIS IN ACTION.
+ ******************************/
+  @media (max-width: 600px) {
+    .section { grid-column: span 12; }
+
+  }
