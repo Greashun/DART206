@@ -37,7 +37,7 @@ Grid Container
 /*****************************
 All Sections
 ******************************/
-.section {
+section {
   padding: 15px;
   background: white;
 }
@@ -62,7 +62,7 @@ Individual Sections - Change the class names if you want, and delete anything yo
 
 .four {
   grid-column: span 4;
-  height: 200px; /* Manually sets the height, otherwise the height will be determined by the tallest content in the grid row. */
+  height: 150px; /* Manually sets the height, otherwise the height will be determined by the tallest content in the grid row. */
   background: #dcdcdc; /* Matches the background color of the body */
   border: 1px solid #ababab;
 }
