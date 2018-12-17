@@ -1,9 +1,7 @@
 Welcome to Glitch
 =================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
-
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live. To see the website preview and the code at the same time, just open a second browser window and paste in the URL for the live preview. 
 
 Find out more [about Glitch](https://glitch.com/about).
 
@@ -28,5 +26,16 @@ CSS files add *visual styling rules* to your content.
 Drag in `assets`, like images or music, to add them to your project
 
 
+The Grid Layout
+------------
+This template creates a simple one page website based on a 12 column grid. 
+The grid is created with the CSS property `display: grid` which won't work in really old browsers, so make sure you're not using Interent Explorer. 
+
+All the `<section>` elements will be arranged into a grid automatically. Give each section a unique `class` and then set how many columns it should occupy in `styles.css` with `grid-column: span 4` \(which will span 4 columns out of 12\).
+
+Both the HTML and CSS files included extensive comments \(displayed in gray\) to help you figure out what each line of code does. Try changing lots of things to see what happens in the actual website.
 
 
+HTML & CSS Support
+-------------
+For more help with the basics of HTML and CSS, check out [Interneting is Hard](https://internetingishard.com/html-and-css/).
