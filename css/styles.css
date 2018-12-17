@@ -1,5 +1,5 @@
 /*****************************
-Basic styles
+BASIC STYLES
 ******************************/
 
 body {
@@ -14,7 +14,6 @@ h1, h2, h3, h4, h5, h6 {
   color: lightseagreen; /* Color for all headers */
 }
 
-
 /* Links */
 a {
   color: dodgerblue;
@@ -26,24 +25,29 @@ a:hover { color: royalblue; }
 
 
 /*****************************
-Grid Container
+GRID CONTAINER
 ******************************/
 .container {
   display: grid;  /* Don't delete this line */
+  /* NOTE: Ignore the two errors below. These properties were released in 2017 and Glitch doens't recognize them yet, but they will work in the browser. */
   grid-template-columns: repeat(12, 1fr); /* Sets up 12 equal columns */
   grid-gap: 10px; /* Sets gap between sections */
 }
 
+
 /*****************************
-All Sections
+ALL SECTIONS 
+Note that this is targeting all <section> elements irregardless of class. 
 ******************************/
 section {
   padding: 15px;
   background: white;
 }
 
+
 /*****************************
-Individual Sections - Change the class names if you want, and delete anything you don't need.
+INDIVIDUAL SECTIONS 
+Change the class names to fit your content (e.g. ".header" or ".bio") and delete anything you don't need.
 ******************************/
 .one {
   grid-column: span 12; /* Spans full width of 12 column container */
