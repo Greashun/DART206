@@ -21,7 +21,7 @@ Where you'll write the *content* of your website.
 
 ### ← style.css
 
-CSS files add *visual styling rules* to your content.
+CSS files add *visual styling rules* to your content. Note that this file is within a folder called "css" to give you some practice working with file paths. This is also common practice for bigger proejcts where you might have multipel CSS files. 
 
 ### ← assets
 
