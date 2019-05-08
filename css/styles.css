@@ -31,7 +31,7 @@ GRID CONTAINER
   display: grid;  /* Don't delete this line */
   /* NOTE: Ignore the two errors below. These properties were released in 2017 and Glitch doens't recognize them yet, but they will work in the browser. */
   grid-template-columns: repeat(12, 1fr); /* Sets up 12 equal columns */
-  grid-gap: 10px; /* Sets gap between sections */
+  grid-gap: 10px; /Sets gap between sections */
 }
 
 
