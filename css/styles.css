@@ -37,7 +37,7 @@ GRID CONTAINER
 
 /*****************************
 ALL SECTIONS 
-This targets all <section> elements regardless of class. 
+Note that this is targeting all <section> elements irregardless of class. 
 ******************************/
 section {
   padding: 15px;
@@ -57,9 +57,8 @@ Change the class names to fit your content (e.g. ".header" or ".bio") and delete
   grid-column: span 4; /* Spans 4 columns (out of 12) */
 }
 .three {
-  grid-column: 6 / 13;
-  /* The following three lines center the content INSIDE the section vertically and horizontally. Handy!
-  Read more about Flex here: https://internetingishard.com/html-and-css/flexbox/ */
+  grid-column: span 4;
+  /* The following three lines center the content vertically AND horizontally. Read more about Flex here: https://internetingishard.com/html-and-css/flexbox/ */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -88,6 +87,6 @@ this tells the element to go from 2 to 7 */
  TRY RESIZING YOUR BROWSER TO SEE THIS IN ACTION.
  ******************************/
   @media (max-width: 600px) {
-    .container section { grid-column: span 12; }
+    .section { grid-column: span 12; }
 
   }
