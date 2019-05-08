@@ -31,13 +31,14 @@ GRID CONTAINER
   display: grid;  /* Don't delete this line */
   /* NOTE: Ignore the two errors below. These properties were released in 2017 and Glitch doens't recognize them yet, but they will work in the browser. */
   grid-template-columns: repeat(12, 1fr); /* Sets up 12 equal columns */
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 10px; /* Sets gap between sections */
 }
 
 
 /*****************************
 ALL SECTIONS 
-Note that this is targeting all <section> elements irregardless of class. 
+This targets all <section> elements regardless of class. 
 ******************************/
 section {
   padding: 15px;
@@ -57,8 +58,9 @@ Change the class names to fit your content (e.g. ".header" or ".bio") and delete
   grid-column: span 4; /* Spans 4 columns (out of 12) */
 }
 .three {
-  grid-column: span 4;
-  /* The following three lines center the content vertically AND horizontally. Read more about Flex here: https://internetingishard.com/html-and-css/flexbox/ */
+  grid-column: 5 / 10;
+  /* The following three lines center the content INSIDE the section vertically and horizontally. Handy!
+  Read more about Flex here: https://internetingishard.com/html-and-css/flexbox/ */
   display: flex;
   align-items: center;
   justify-content: center;
