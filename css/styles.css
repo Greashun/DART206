@@ -87,6 +87,6 @@ this tells the element to go from 2 to 7 */
  TRY RESIZING YOUR BROWSER TO SEE THIS IN ACTION.
  ******************************/
   @media (max-width: 600px) {
-    .section { grid-column: span 12; }
+    .container section { grid-column: span 12; }
 
   }
