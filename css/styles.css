@@ -29,15 +29,14 @@ GRID CONTAINER
 ******************************/
 .container {
   display: grid;  /* Don't delete this line */
-  /* NOTE: Ignore the two errors below. These properties were released in 2017 and Glitch doens't recognize them yet, but they will work in the browser. */
   grid-template-columns: repeat(12, 1fr); /* Sets up 12 equal columns */
-  grid-gap: 10px; /Sets gap between sections */
+  grid-gap: 10px; /* Sets gap between sections */
 }
 
 
 /*****************************
 ALL SECTIONS 
-Note that this is targeting all <section> elements irregardless of class. 
+This targets all <section> elements irregardless of class. 
 ******************************/
 section {
   padding: 15px;
@@ -58,7 +57,7 @@ Change the class names to fit your content (e.g. ".header" or ".bio") and delete
 }
 .three {
   grid-column: span 4;
-  /* The following three lines center the content vertically AND horizontally. Read more about Flex here: https://internetingishard.com/html-and-css/flexbox/ */
+  /* The following three lines center this section's content vertically AND horizontally. Read more about Flex here: https://internetingishard.com/html-and-css/flexbox/ */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,10 +70,8 @@ Change the class names to fit your content (e.g. ".header" or ".bio") and delete
   border: 1px solid #ababab;
 }
 
-/* With 12 columns, there are 13 vertical lines defining them;
-this tells the element to go from 2 to 7 */
 .five {
-  grid-column:  3 / 11; /* Instead of defining the size with "span" this section begins at column-line-3 and ends at column-line-11 (note that 12 columns create 13 column-lines between the columns) */
+  grid-column:  3 / 11; /* Instead of defining the size with "span" this section begins at column-line-3 and ends at column-line-11 (note that 12 columns create 13 column-lines between the columns), view lines using the browser inspector. */
   text-align: center; /* Centers the text horizontally */
 }
 
