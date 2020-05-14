@@ -27,7 +27,7 @@ a:hover { color: royalblue; }
 /*****************************
 GRID CONTAINER
 ******************************/
-.container {
+.grid-container {
   display: grid;  /* Don't delete this line */
   grid-template-columns: repeat(12, 1fr); /* Sets up 12 equal columns */
   grid-gap: 10px; /* Sets gap between sections */
@@ -84,6 +84,6 @@ Change the class names to fit your content (e.g. ".header" or ".bio") and delete
  TRY RESIZING YOUR BROWSER TO SEE THIS IN ACTION.
  ******************************/
   @media (max-width: 600px) {
-    .container section { grid-column: span 12; }
+    .grid-container section { grid-column: span 12; }
 
   }
