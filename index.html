@@ -25,28 +25,25 @@
     <main class="grid-container">
       <!-- Your HTML content goes below here -->
 
-      <section class="one">
+      <section class="header-section">
         <h1>Vincent Tse</h1>
-        <div>
-          <ul>
-            <li>Assignment 2</li>
-            <li>Assignment 3</li>
-            <li>My Blog</li>
+        <div class="menu-wrapper">
+          <ul id="menu-content">
+            <li class="menu-item"><a href="">Assignment 2</a></li>
+            <li class="menu-item"><a href="">Assignment 3</a></li>
+            <li class="menu-item">
+              <a href="https://sites.psu.edu/vtse/">My Blog</a>
+            </li>
           </ul>
         </div>
       </section>
 
-      <section class="two">
-        <img
-          src="src/img/noodle.webp"
-          alt="peanut butter noodles"
-          width="350px"
-          height="250px"
-        />
+
+      <section class="title-section">
+        <h2>Fujian Recipe: Bawn Mian (Peanut Butter Wonton Noodles)</h2>
       </section>
 
-      <section class="three">
-        <h2>Fujian Recipe: Bawn Mian (Peanut Butter Wonton Noodles)</h2>
+      <section class="description-section">
         <p>
           In Fuzhou, province, the typical breakfeast food <br />
           to start off the morning is bawn mian. The <br />
@@ -55,7 +52,18 @@
           budget friendly!
         </p>
       </section>
-      <section class="four">
+
+      <section class="image-section">
+        <img
+          id="dish-img"
+          src="img/noodle.webp"
+          alt="peanut butter noodles"
+          width="350px"
+          height="250px"
+        />
+      </section>
+
+      <section class="ingredient-section">
         <div>
           Ingredients
         </div>
@@ -78,7 +86,7 @@
         </ol>
       </section>
 
-      <section class="five">
+      <section class="instruction-section">
         <div id="instruction-title">
           Steps
         </div>
@@ -123,7 +131,10 @@
     <!-- End grid container -->
 
     <!-- Includes the Glitch button in the corner to show what the webpage is about and to make it easier for folks to view source and remix -->
-    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <div
+      class="glitchButton"
+      style="position: fixed; top: 20px; right: 20px;"
+    ></div>
     <script src="https://button.glitch.me/button.js"></script>
   </body>
 </html>

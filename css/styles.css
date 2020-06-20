@@ -9,9 +9,19 @@ body {
     font-family: sans-serif; /* Sets font family for entire page, unless you declare something else below */
 }
 
+li {
+  text-decoration: none;
+  /* list-style: none; */
+}
+
+a {
+  text-decoration: none;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   color: lightseagreen; /* Color for all headers */
+  text-align: center; /*Align all headers to center */
 }
 
 /* Links */
@@ -42,36 +52,61 @@ section {
   padding: 15px;
   background: white;
 }
-
-
 /*****************************
 INDIVIDUAL SECTIONS 
 Change the class names to fit your content (e.g. ".header" or ".bio") and delete anything you don't need.
 ******************************/
-.one {
+.header-section {
   grid-column: span 12; /* Spans full width of 12 column container */
+  align-items: center;
+  justify-content: center;
+  /* display: flex;
+  flex-direction: column; */
 }
 
-.two {
-  grid-column: span 4; /* Spans 4 columns (out of 12) */
-}
-.three {
-  grid-column: span 4;
-  /* The following three lines center this section's content vertically AND horizontally. Read more about Flex here: https://internetingishard.com/html-and-css/flexbox/ */
+.menu-wrapper > #menu-content{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu-item {
+  margin: .3em;
+}
+
+.title-section {
+  grid-column: span 4; /* Spans 4 columns (out of 12) */
+  grid-row: 2;
+  grid-column: 4/9;
+  display: grid;
+  justify-content: center;
+}
+
+.description-section {
+  grid-row: 3;
+  grid-column: 4/6;
+}
+
+.image-section {
+  grid-column: span 1;
+  /* The following three lines center this section's content vertically AND horizontally. Read more about Flex here: https://internetingishard.com/html-and-css/flexbox/ */
+  grid-row: 3;
+  grid-column: 7/9;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.four {
-  grid-column: span 4;
-  height: 150px; /* Manually sets the height, otherwise the height will be determined by the tallest content in the grid row. */
-  background: #dcdcdc; /* Matches the background color of the body */
-  border: 1px solid #ababab;
+.ingredient-section{
+  grid-column: 4 / 6;
+  /* background: #dcdcdc; /* Matches the background color of the body */
+  /* border: 1px solid #ababab; */
 }
 
-.five {
-  grid-column:  3 / 11; /* Instead of defining the size with "span" this section begins at column-line-3 and ends at column-line-11 (note that 12 columns create 13 column-lines between the columns), view lines using the browser inspector. */
+.instruction-section {
+  grid-column:  7 / 9; /* Instead of defining the size with "span" this section begins at column-line-3 and ends at column-line-11 (note that 12 columns create 13 column-lines between the columns), view lines using the browser inspector. */
   text-align: center; /* Centers the text horizontally */
 }
 
