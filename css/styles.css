@@ -5,13 +5,12 @@ BASIC STYLES
 body {
     margin: 0;
     padding: 30px; /* Pushes content away from the edges of the browser */
-    background: #dedede; /* Background color */
-    font-family: sans-serif; /* Sets font family for entire page, unless you declare something else below */
+    background: #00628C; /* Background color */
+    font-family: "Roboto Slab", sans-serif; /* Sets font family for entire page, unless you declare something else below */
 }
 
 li {
   text-decoration: none;
-  /* list-style: none; */
 }
 
 a {
@@ -19,14 +18,16 @@ a {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
-  color: lightseagreen; /* Color for all headers */
+h1 {
   text-align: center; /*Align all headers to center */
 }
 
+h3, h4 {
+  color: #52F170;
+}
 /* Links */
 a {
-  color: dodgerblue;
+  color: black;
   text-decoration: none; /* Removes underline from hyperlinks */
 }
 
@@ -50,18 +51,14 @@ This targets all <section> elements irregardless of class.
 ******************************/
 section {
   padding: 15px;
-  background: white;
+  background: wheat;
 }
 /*****************************
 INDIVIDUAL SECTIONS 
 Change the class names to fit your content (e.g. ".header" or ".bio") and delete anything you don't need.
 ******************************/
 .header-section {
-  grid-column: span 12; /* Spans full width of 12 column container */
-  align-items: center;
-  justify-content: center;
-  /* display: flex;
-  flex-direction: column; */
+  grid-column: 4 / 9; /* Spans full width of 12 column container */
 }
 
 .menu-wrapper > #menu-content{
@@ -76,16 +73,38 @@ Change the class names to fit your content (e.g. ".header" or ".bio") and delete
 }
 
 .title-section {
-  grid-column: span 4; /* Spans 4 columns (out of 12) */
   grid-row: 2;
   grid-column: 4/9;
   display: grid;
   justify-content: center;
 }
 
+
+[class*=".time-list"] {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-title {
+  grid-column: 2;
+}
+.time-list-1 {
+  grid-row-start: inherit;
+}
+
+.time-list-2 {
+  grid-row: 2;
+  text-align: center;
+}
+
+.time-list-3 {
+  grid-row: 2;
+}
+
 .description-section {
   grid-row: 3;
   grid-column: 4/6;
+  padding: 60px 50px;
 }
 
 .image-section {
@@ -99,15 +118,27 @@ Change the class names to fit your content (e.g. ".header" or ".bio") and delete
   justify-content: center;
 }
 
+#dish-img {
+  width: 350px;
+  height: 250px;
+}
 .ingredient-section{
   grid-column: 4 / 6;
-  /* background: #dcdcdc; /* Matches the background color of the body */
-  /* border: 1px solid #ababab; */
+  padding: 20px 60px;
+}
+
+.list {
+  padding: .3em;
 }
 
 .instruction-section {
-  grid-column:  7 / 9; /* Instead of defining the size with "span" this section begins at column-line-3 and ends at column-line-11 (note that 12 columns create 13 column-lines between the columns), view lines using the browser inspector. */
-  text-align: center; /* Centers the text horizontally */
+  grid-column:  7 / 9; 
+  grid-row: 4 / 6;
+  padding: 30px 30px;
+}
+
+.steps {
+  padding: .6em .3em;
 }
 
 
